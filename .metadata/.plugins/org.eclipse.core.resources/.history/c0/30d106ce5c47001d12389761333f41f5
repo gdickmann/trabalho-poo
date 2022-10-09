@@ -1,0 +1,7 @@
+package prova;
+
+public class Usuairo {
+	
+	private String nome;
+	
+}

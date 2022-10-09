@@ -1,0 +1,52 @@
+package prova;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import java.awt.BorderLayout;
+
+public class Prova {
+
+	private JFrame frame;
+	private JTextField txtNomeDoUsurio;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Prova window = new Prova();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Prova() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		txtNomeDoUsurio = new JTextField();
+		txtNomeDoUsurio.setText("Nome do usuário");
+		txtNomeDoUsurio.setToolTipText("");
+		frame.getContentPane().add(txtNomeDoUsurio, BorderLayout.NORTH);
+		txtNomeDoUsurio.setColumns(10);
+	}
+
+}

@@ -1,0 +1,18 @@
+package prova;
+
+import java.util.Date;
+
+public class Usuario {
+	
+	private String nome;
+	private String enderecoInstalacao;
+	private Date dataInstalacao;
+	private String numeroTelefone;
+	private boolean possuiInternet;
+	private float valorBasico;
+	
+	public String getNome() {
+		return "";
+	}
+	
+}
